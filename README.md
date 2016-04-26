@@ -5,7 +5,7 @@ Home: https://github.com/spulec/freezegun
 
 Package license: Apache-2.0
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Let your Python tests travel through time
 
@@ -72,6 +72,11 @@ Current build status
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/freezegun-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/freezegun-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/freezegun-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/freezegun-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/freezegun-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/freezegun-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/freezegun/badges/version.svg)](https://anaconda.org/conda-forge/freezegun)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/freezegun/badges/downloads.svg)](https://anaconda.org/conda-forge/freezegun)
 
 
 Updating freezegun-feedstock
