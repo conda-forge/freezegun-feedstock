@@ -1,11 +1,13 @@
+{% set version = "0.3.7" %}
+
 package:
     name: freezegun
-    version: 0.3.6
+    version: {{ version }}
 
 source:
-    fn: freezegun-0.3.6.tar.gz
-    url: https://pypi.python.org/packages/source/f/freezegun/freezegun-0.3.6.tar.gz
-    md5: c321cf7392343f91e524eec0b601e8ec
+    fn: freezegun-{{ version }}.tar.gz
+    url: https://github.com/spulec/freezegun/archive/{{ version }}.tar.gz
+    sha256: 7c991d983056a544cc9d687fdcef97f3135bf6263df19c9ae331ceb712333e1f
 
 build:
     number: 0
