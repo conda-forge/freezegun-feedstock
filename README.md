@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/freezegun-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/freezegun-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/freezegun-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/freezegun-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/freezegun-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/freezegun-feedstock/branch/master)
