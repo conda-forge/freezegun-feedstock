@@ -1,38 +1,36 @@
-{% set version = "0.3.7" %}
+{% set version = "0.3.8" %}
 
 package:
-    name: freezegun
-    version: {{ version }}
+  name: freezegun
+  version: {{ version }}
 
 source:
-    fn: freezegun-{{ version }}.tar.gz
-    url: https://github.com/spulec/freezegun/archive/{{ version }}.tar.gz
-    sha256: 7c991d983056a544cc9d687fdcef97f3135bf6263df19c9ae331ceb712333e1f
+  fn: freezegun-{{ version }}.tar.gz
+  url: https://github.com/spulec/freezegun/archive/{{ version }}.tar.gz
+  sha256: a95398cd6760996c16414b71aaefa0c45501682ba7fe2ceb1a1ccdb171a4948e
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-    build:
-        - python
-        - setuptools
-        - six
-        - python-dateutil >=1.0,!=2.0
-    run:
-        - python
-        - six
-        - python-dateutil >=1.0,!=2.0
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - six
+    - python-dateutil >=1.0,!=2.0
 
 test:
-    imports:
-        - freezegun
+  imports:
+    - freezegun
 
 about:
-    home: https://github.com/spulec/freezegun
-    license: Apache-2.0
-    summary: Let your Python tests travel through time
+  home: https://github.com/spulec/freezegun
+  license: Apache-2.0
+  summary: 'Let your Python tests travel through time.'
 
 extra:
-    recipe-maintainers:
-        - ocefpaf
+  recipe-maintainers:
+    - ocefpaf
