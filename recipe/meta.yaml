@@ -1,4 +1,4 @@
-{% set version = "0.3.8" %}
+{% set version = "0.3.9" %}
 
 package:
   name: freezegun
@@ -6,8 +6,8 @@ package:
 
 source:
   fn: freezegun-{{ version }}.tar.gz
-  url: https://github.com/spulec/freezegun/archive/{{ version }}.tar.gz
-  sha256: a95398cd6760996c16414b71aaefa0c45501682ba7fe2ceb1a1ccdb171a4948e
+  url: https://pypi.io/packages/source/f/freezegun/freezegun-{{ version }}.tar.gz
+  sha256: 783ccccd7f60968bfe49ad9e114c18ea2b63831faaaf61c1f1f71ddfde1c0eee
 
 build:
   number: 0
@@ -20,7 +20,8 @@ requirements:
   run:
     - python
     - six
-    - python-dateutil >=1.0,!=2.0
+    - python-dateutil >=1.0,!=2.0  # [not py3k]
+    - python-dateutil >=2.0  # [py3k]
 
 test:
   imports:
@@ -29,6 +30,7 @@ test:
 about:
   home: https://github.com/spulec/freezegun
   license: Apache-2.0
+  license_file: LICENSE
   summary: 'Let your Python tests travel through time.'
 
 extra:
