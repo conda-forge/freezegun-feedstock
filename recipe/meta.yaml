@@ -10,7 +10,8 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
@@ -19,8 +20,7 @@ requirements:
   run:
     - python
     - six
-    - python-dateutil >=1.0,!=2.0  # [not py3k]
-    - python-dateutil >=2.0  # [py3k]
+    - python-dateutil >2.0
 
 test:
   imports:
@@ -30,7 +30,7 @@ about:
   home: https://github.com/spulec/freezegun
   license: Apache-2.0
   license_file: LICENSE
-  summary: 'Let your Python tests travel through time.'
+  summary: 'Let your Python tests travel through time'
 
 extra:
   recipe-maintainers:
