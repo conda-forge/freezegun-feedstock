@@ -1,4 +1,4 @@
-{% set version = "0.3.14" %}
+{% set version = "0.3.15" %}
 
 package:
   name: freezegun
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/freezegun/freezegun-{{ version }}.tar.gz
-  sha256: 6262de2f4bab671f7189bb8a0b9d8751da69a53f0b9813fb8f412681662d872a
+  sha256: e2062f2c7f95cc276a834c22f1a17179467176b624cc6f936e8bc3be5535ad1b
 
 build:
   number: 0
