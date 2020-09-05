@@ -1,4 +1,4 @@
-{% set version = "0.3.15" %}
+{% set version = "1.0.0" %}
 
 package:
   name: freezegun
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/freezegun/freezegun-{{ version }}.tar.gz
-  sha256: e2062f2c7f95cc276a834c22f1a17179467176b624cc6f936e8bc3be5535ad1b
+  sha256: 1cf08e441f913ff5e59b19cc065a8faa9dd1ddc442eaf0375294f344581a0643
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -30,7 +30,7 @@ about:
   home: https://github.com/spulec/freezegun
   license: Apache-2.0
   license_file: LICENSE
-  summary: 'Let your Python tests travel through time'
+  summary: Let your Python tests travel through time
 
 extra:
   recipe-maintainers:
