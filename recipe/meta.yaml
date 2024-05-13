@@ -1,24 +1,27 @@
+{% set name = "freezegun" %}
 {% set version = "1.5.1" %}
 
 package:
-  name: freezegun
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/f/freezegun/freezegun-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/freezegun-{{ version }}.tar.gz
   sha256: b29dedfcda6d5e8e083ce71b2b542753ad48cfec44037b3fc79702e2980a89e9
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.7
+    - setuptools
+    - wheel
     - pip
   run:
-    - python >=3.5
+    - python >=3.7
     - python-dateutil >=2.7
 
 test:
